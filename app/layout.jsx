@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Provider from "../components/Provider";
 import "../styles/global.css";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "Promptopia",
@@ -21,6 +22,7 @@ const RootLayout = ({ children }) => {
           <main className="app">
             <Navbar />
             {children}
+            <Analytics/>
           </main>
         </Provider>
       </body>
